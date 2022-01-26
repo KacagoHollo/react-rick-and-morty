@@ -6,6 +6,7 @@ import "./App.css";
 import Characters from "./components/Characters";
 import Locations from "./components/Locations";
 import ButtonList from "./components/Button";
+import Description from "./components/Description";
 
 function App() {
   /*   const [characters, setCharacters] = useState([]);
@@ -13,15 +14,18 @@ function App() {
 
   const [character, setCharacter] = useState(false);
   const [location, setLocation] = useState(false);
+  const [description, setDescription] = useState(true);
 
   const showChar = () => {
     setCharacter(true);
     setLocation(false);
+    setDescription(false);
   };
 
   const showLoc = () => {
     setLocation(true);
     setCharacter(false);
+    setDescription(false);
   };
 
   const charText = "Characters";
@@ -42,6 +46,7 @@ function App() {
         </div>
         {!character && !location ? (
           <div>
+            <Description />
             {/* <Description /> */}
             {/* //itt lesz a bemutatkozó komponens */}
           </div>

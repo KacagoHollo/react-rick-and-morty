@@ -19,6 +19,7 @@ const Characters = () => {
         gender={item.gender}
         origin={item.origin.name}
         location={item.location.name}
+        status={item.status}
       />
     ));
   }

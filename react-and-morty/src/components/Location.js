@@ -13,7 +13,7 @@ const Location = (props) => {
             onClick={showLocationDetails}
         >
             <div className="locName">
-                <p>{props.name}</p>
+                <h2>{props.name}</h2>
             </div>
             <div className="locType">
                 <p>{props.type}</p>

@@ -21,18 +21,19 @@ const Locations = (props) => {
 
   return (
     <div>
-      <div className="location-list">{locationList}</div>;
-      <div className="pagination">
-        {/* attributumok a design-hoz: https://mui.com/components/pagination/ */}
-        <Pagination
-          count="7"
-          page={page}
-          onChange={paginationEvent}
-          defaultPage={1}
-          boundaryCount={2}
-          size="large"
-          color="secondary"
-        />
+      <div className="location-list">{locationList}
+        <div className="pagination">
+          {/* attributumok a design-hoz: https://mui.com/components/pagination/ */}
+          <Pagination
+            count="7"
+            page={page}
+            onChange={paginationEvent}
+            defaultPage={1}
+            boundaryCount={2}
+            size="large"
+            color="secondary"
+          />
+        </div>
       </div>
     </div>
   );
