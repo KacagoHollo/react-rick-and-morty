@@ -284,7 +284,7 @@ a {
 }
 
 .locName h2 {
-  font-size: 25px;
+  font-size: 22px;
   color: rgb(29, 70, 100);
   font-family: "get-schwifty";
   text-align: center;
@@ -294,9 +294,10 @@ a {
 .locVisilble h2 {
   text-align: center;
   color: rgb(29, 70, 100);
+  line-height: 1.5rem;
 }
 .locVisible p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
