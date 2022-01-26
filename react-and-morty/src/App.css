@@ -284,10 +284,12 @@ a {
 }
 
 .locName h2 {
-  font-size: 22px;
+  font-size: 23px;
   color: rgb(29, 70, 100);
   font-family: "get-schwifty";
   text-align: center;
+  line-height: 1.5rem;
+  padding: 0 45px;
 }
 
 .locVisible p,
@@ -299,6 +301,8 @@ a {
 .locVisible p {
   font-size: 1rem;
   font-weight: 700;
+  max-width: 200px;
+  margin: 15px auto;
 }
 
 .portalCards {
