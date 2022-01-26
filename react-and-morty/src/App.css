@@ -289,8 +289,14 @@ a {
   text-align: center;
 }
 
-.locVisible p {
+.locVisible p,
+.locVisilble h2 {
   text-align: center;
+  color: rgb(29, 70, 100);
+}
+.locVisible p {
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .portalCards {
