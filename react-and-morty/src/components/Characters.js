@@ -31,6 +31,7 @@ const Characters = () => {
     <div className="character-list">
       {characterList}
       <div className="pagination">
+        {/* attributumok a design-hoz: https://mui.com/components/pagination/ */}
         <Pagination
           count="42"
           page={page}

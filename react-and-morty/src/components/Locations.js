@@ -23,6 +23,7 @@ const Locations = (props) => {
     <div>
       <div className="location-list">{locationList}</div>;
       <div className="pagination">
+        {/* attributumok a design-hoz: https://mui.com/components/pagination/ */}
         <Pagination
           count="7"
           page={page}

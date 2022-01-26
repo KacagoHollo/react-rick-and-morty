@@ -54,6 +54,13 @@ body {
   background-position: center bottom;
 }
 
+/* @font-face {
+  font-family: "WubbaLubbaDubDub";
+  src: url("react-and-morty/src/fonts/WubbaLubbaDubDub.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
+
 /* logó formázás és pozicionálás */
 header {
   display: flex;
@@ -115,10 +122,16 @@ button:hover span:after {
 /* button formázás és animáció vége */
 
 .charCard {
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
   width: 200px;
-  height: 350px;
-  border: 5px solid transparent;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgba(95, 158, 160, 0.5);
+  /* border: 5px solid transparent; */
   /*   border-image: url("./btnbg.png") 30; */
   /* background-image: url('./btnbg.png'); */
 }
@@ -128,8 +141,10 @@ button:hover span:after {
 .character-list,
 .location-list {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px 40px;
 }
 
 .img {
@@ -145,9 +160,10 @@ button:hover span:after {
   /*   font-family: "get-schwifty";
    */
 }
-.charName {
+
+/* .charName {
   height: 80px;
-}
+} */
 
 .locCard {
   margin: 5px;
@@ -181,6 +197,7 @@ a {
   border: 5px solid transparent;
   /*   border-image: url("./btnbg.png") 30 round; */
   position: absolute;
+  background-color: black;
 }
 
 .locVisible {
