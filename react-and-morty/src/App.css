@@ -1,0 +1,201 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+
+  font-family: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  display: block;
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
+/* end of CSS reset */
+
+body {
+  height: 100vh;
+  max-width: 100vw;
+  background-image: url("./images/bckgrnd_rm.jpg");
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+
+/* logó formázás és pozicionálás */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 40%;
+}
+/* logó formázás és pozicionálás vége */
+
+/* button formázás és animáció */
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 200px;
+  padding: 20px;
+}
+
+.content button {
+  margin: 0 60px;
+  padding: 10px 30px;
+  width: 200px;
+  background-color: rgb(0, 179, 204);
+  border-radius: 10px;
+  font-size: 1.4em;
+  color: rgb(181, 233, 221);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* button formázás és animáció vége */
+
+.charCard {
+  margin: 10px;
+  width: 200px;
+  height: 350px;
+  border: 5px solid transparent;
+  /*   border-image: url("./btnbg.png") 30; */
+  /* background-image: url('./btnbg.png'); */
+}
+/* charcard-on vannak a szövegek */
+
+/* konténer kezdete */
+.character-list,
+.location-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+.charName,
+.charSpec {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  /*   font-family: "get-schwifty";
+   */
+}
+.charName {
+  height: 80px;
+}
+
+.locCard {
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  /*   font-family: "get-schwifty";
+   */
+  font-size: 20px;
+  font-weight: 700;
+  width: 250px;
+  height: 200px;
+  border: 5px solid transparent;
+  /*   border-image: url("./btnbg.png") 30 round; */
+  /* background-image: url('./btnbg.png'); */
+}
+
+a {
+  position: absolute;
+  color: white;
+  font-size: 35px;
+}
+
+.charVisible {
+  width: 250px;
+  height: 500px;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  /*   font-family: "get-schwifty";
+   */ /*   background-image: url("./stars-black-background.jpg"); */
+  border: 5px solid transparent;
+  /*   border-image: url("./btnbg.png") 30 round; */
+  position: absolute;
+}
+
+.locVisible {
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  /*   font-family: "get-schwifty";
+   */ /*   background-image: url("./stars-black-background.jpg");
+   */
+  border: 5px solid transparent;
+  /*   border-image: url("./btnbg.png") 30 round;
+   */
+  position: absolute;
+}
+/* konténer vége */
