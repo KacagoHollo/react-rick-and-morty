@@ -280,6 +280,7 @@ a {
 .detailedCards p {
   text-align: center;
   color: rgb(29, 70, 100);
+  margin: 8px 0;
 }
 
 .locName h2 {
@@ -301,15 +302,16 @@ a {
 
 .portalCards {
   text-align: center;
-  line-height: 0.8rem;
+  line-height: 1.3rem;
 
   position: sticky;
   width: 360px;
   height: 400px;
   background-image: url("./images/portal1.png");
-  background-size: 98%;
+  background-size: 92%;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 60px;
 }
 
 .portalCardsLoc {
