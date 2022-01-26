@@ -8,14 +8,14 @@ const Character = (props) => {
   };
   // bug (??) egyszerre tobb kartyat is meg lehet nyitni egymas tetejere
   return (
-    <div className={isShown ? "charVisible" : "charCard"} onClick={showCharacterDetails}>
+    <div className={isShown ? "detailedCards" : "miniCards"} onClick={showCharacterDetails}>
       <div className="charName">
         <p>{props.name}</p>
       </div>
-      <div className="charmImg">
+      <div className="charPicture">
         <img className="img" src={props.image} alt="" />
       </div>
-      <div className="charSpec">
+      <div className="charSpecies">
         <p>{props.species}</p>
       </div>
       {isShown && (

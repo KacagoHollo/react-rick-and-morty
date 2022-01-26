@@ -8,8 +8,8 @@ function ButtonList(props) {
 
     let content = 
     <div className="buttonW">
-        <button className="cha" onClick={showChar}>{button1}</button>
-        <button className="loc" onClick={showLoc}>{button2}</button>
+        <button className="cha" onClick={showChar}><span>{button1}</span></button>
+        <button className="loc" onClick={showLoc}><span>{button2}</span></button>
     </div>;
 
     return content;

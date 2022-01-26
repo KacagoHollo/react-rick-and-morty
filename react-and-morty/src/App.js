@@ -32,7 +32,7 @@ function App() {
       <header>
         <img src={logo} />
       </header>
-      <div className="container">
+      <div className="content">
         <div className="buttons">
           {/* <button onClick={showChar}>Characters</button>
           <button onClick={showLoc}>Locations</button> */}

@@ -83,8 +83,9 @@ header img {
   padding: 20px;
 }
 
-.content button {
-  margin: 0 60px;
+button.cha,
+button.loc {
+  margin: 0px 60px 20px 60px;
   padding: 10px 30px;
   width: 200px;
   background-color: rgb(0, 179, 204);
@@ -95,14 +96,16 @@ header img {
   cursor: pointer;
 }
 
-button span {
+button.cha span,
+button.loc span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-button span:after {
+button.cha span:after,
+button.loc span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -121,7 +124,7 @@ button:hover span:after {
 }
 /* button formázás és animáció vége */
 
-.charCard {
+.miniCards {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -132,12 +135,9 @@ button:hover span:after {
   border-radius: 10px;
   background-color: rgba(95, 158, 160, 0.5);
   /* border: 5px solid transparent; */
-  /*   border-image: url("./btnbg.png") 30; */
-  /* background-image: url('./btnbg.png'); */
+  /*   border-image: url("./btnbg.png"//* konténer kezdete */
 }
-/* charcard-on vannak a szövegek */
 
-/* konténer kezdete */
 .character-list,
 .location-list {
   display: flex;
@@ -185,7 +185,8 @@ a {
   font-size: 35px;
 }
 
-.charVisible {
+.detailedCard {
+  position: fixed;
   width: 250px;
   height: 500px;
   z-index: 10;
@@ -196,7 +197,7 @@ a {
    */ /*   background-image: url("./stars-black-background.jpg"); */
   border: 5px solid transparent;
   /*   border-image: url("./btnbg.png") 30 round; */
-  position: absolute;
+  /* position: absolute; */
   background-color: black;
 }
 
@@ -218,4 +219,8 @@ a {
 /* konténer vége */
 
 .pagination {
+}
+
+.miniCards p {
+  text-align: center;
 }
