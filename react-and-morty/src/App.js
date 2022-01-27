@@ -3,10 +3,10 @@ import { useCharacters, useLocations } from "./api/useData";
 import { useFetch } from "./api/useFetch";
 import logo from "./images/Rick_and_Morty_Logo_and_Image.png";
 import "./App.css";
-import Characters from "./components/Characters";
-import Locations from "./components/Locations";
-import ButtonList from "./components/Button";
-import Description from "./components/Description";
+import Characters from "./components/Characters.jsx";
+import Locations from "./components/Locations.jsx";
+import ButtonList from "./components/Button.jsx";
+import Description from "./components/Description.jsx";
 
 function App() {
   /*   const [characters, setCharacters] = useState([]);
