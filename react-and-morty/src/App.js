@@ -29,7 +29,7 @@ function App() {
   };
 
   const charText = "Characters";
-  const locText = "Location";
+  const locText = "Locations";
 
   return (
     <div className="App">

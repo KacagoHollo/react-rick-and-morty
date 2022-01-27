@@ -11,13 +11,13 @@ const Character = (props) => {
     <div className={isShown ? "detailedCards" : "miniCards"} onClick={showCharacterDetails}>
       <div className={isShown ? "portalCards" : ""}>
         <div className="charName">
-          <p>{props.name}</p>
+          <p className="charac">{props.name}</p>
         </div>
         <div className="charPicture">
           <img className="img" src={props.image} alt="" />
         </div>
         <div className="charSpecies">
-          <p>{props.species}</p>
+          <p className="characSpec">{props.species}</p>
         </div>
         {isShown && (
           <div>

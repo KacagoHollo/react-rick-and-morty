@@ -61,6 +61,21 @@ body {
   font-style: normal;
 } */
 
+@font-face {
+  font-family: "get_schwifty";
+  src: url("./fonts/get_schwifty.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@300;400;500;600;700&display=swap");
+/* font-family: 'Audiowide', cursive;
+font-family: 'Teko', sans-serif; */
+
+p {
+  font-family: "Audiowide", cursive;
+}
+
 /* logó formázás és pozicionálás */
 header {
   display: flex;
@@ -71,7 +86,6 @@ header img {
   width: 40%;
 }
 /* logó formázás és pozicionálás vége */
-
 /* button formázás és animáció */
 .content {
   display: flex;
@@ -94,6 +108,7 @@ button.loc {
   color: rgb(181, 233, 221);
   transition: all 0.5s;
   cursor: pointer;
+  font-family: "get_schwifty";
 }
 
 button.cha span,
@@ -126,14 +141,16 @@ button:hover span:after {
 
 .description {
   color: rgb(29, 70, 100);
-  padding: 20px 40px;
-  font-size: 1.4em;
+  padding: 0 40px;
+  font-size: 1.3em;
   text-align: justify;
   line-height: 1.5em;
+  font-family: "Audiowide", cursive;
 }
 .description h1 {
   text-align: center;
   font-size: 1.6em;
+  font-family: "get_schwifty";
 }
 
 .miniCards {
@@ -149,6 +166,8 @@ button:hover span:after {
   background-color: rgba(95, 158, 160, 0.5);
   /* border: 5px solid transparent; */
   /*   border-image: url("./btnbg.png"//* konténer kezdete */
+
+  box-shadow: 10px 10px 12px #fafd7c99;
 }
 
 .character-list,
@@ -171,8 +190,6 @@ button:hover span:after {
   font-size: 20px;
   font-weight: 700;
   color: rgb(255, 255, 255);
-  /*   font-family: "get-schwifty";
-   */
 }
 
 /* .charName {
@@ -192,6 +209,8 @@ button:hover span:after {
   border-radius: 10px;
   background-color: rgba(95, 158, 160, 0.5);
   color: white;
+
+  box-shadow: 10px 10px 12px #fb646799;
 
   /* margin: 5px;
   color: rgb(255, 255, 255);
@@ -279,17 +298,25 @@ a {
 
 .detailedCards p {
   text-align: center;
-  color: rgb(29, 70, 100);
-  margin: 8px 0;
+  color: #24325fff;
+  margin: 4px 0;
+  font-weight: 700;
+}
+.detailedCards h2 {
+  text-align: center;
+  color: #24325fff;
+  margin: 4px 0;
+  font-weight: 900;
+  font-family: "Audiowide", cursive;
 }
 
 .locName h2 {
   font-size: 23px;
   color: rgb(29, 70, 100);
-  font-family: "get-schwifty";
   text-align: center;
   line-height: 1.5rem;
   padding: 0 45px;
+  font-family: "Audiowide", cursive;
 }
 
 .locVisible p,
@@ -335,3 +362,57 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 650px) {
+  .content {
+    min-width: 300px;
+    margin: 10px auto;
+  }
+  .buttonW {
+    margin: 0px auto;
+    text-align: center;
+  }
+  /* button.cha,
+  button.loc {
+    margin: 0px 95px 20px 95px;
+  } */
+}
+@media screen and (max-width: 1080px) {
+  .content {
+    min-width: 300px;
+    /* margin: 10px auto; */
+  }
+  .buttonW {
+    margin: 0px auto;
+    text-align: center;
+  }
+  /* button.cha,
+  button.loc {
+    margin: 0px 95px 20px 95px;
+  } */
+}
+
+p.charac {
+  margin-top: 15px;
+}
+
+/* ENDLESS ROTATE */
+.rotate {
+  animation: rotate 1.5s linear infinite;
+}
+
+.rotate-none {
+  animation: rotate-none;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-none {
+  to {
+    transform: none;
+  }
+}
+/* ENDLESS ROTATE */
