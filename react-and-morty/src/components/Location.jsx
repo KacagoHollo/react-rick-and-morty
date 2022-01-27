@@ -10,7 +10,7 @@ const Location = (props) => {
     return (
         <div
             className={isShown ? "locVisible" : "locCard"}
-            onClick={showLocationDetails}
+            onClick={showLocationDetails} onMouseEnter={showLocationDetails}
         >
             <div className={isShown ? "portalCardsLoc" : ""}>
                 <div className="locName">

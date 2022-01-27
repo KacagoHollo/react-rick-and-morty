@@ -28,13 +28,19 @@ function App() {
     setDescription(false);
   };
 
+  const showDesc = () => {
+    setLocation(false);
+    setCharacter(false);
+    setDescription(true);
+  };
+
   const charText = "Characters";
   const locText = "Locations";
 
   return (
     <div className="App">
       <header>
-        <img src={logo} />
+        <img src={logo} onClick={showDesc} />
       </header>
       <div className="content">
         <div className="buttons">

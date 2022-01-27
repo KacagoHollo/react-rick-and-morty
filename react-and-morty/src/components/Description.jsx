@@ -14,7 +14,7 @@ const Description = () => {
         <br />
         Click on any of the buttons to see the related data. On the cards click again to toggle further informations.
       </p>
-      <h1>Wubba Lubba dub dub!!!</h1>
+      <h1>Wubba Lubba dub dub</h1>
     </div>
   );
 };

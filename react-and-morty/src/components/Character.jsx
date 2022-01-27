@@ -8,7 +8,7 @@ const Character = (props) => {
   };
   // bug (??) egyszerre tobb kartyat is meg lehet nyitni egymas tetejere
   return (
-    <div className={isShown ? "detailedCards" : "miniCards"} onClick={showCharacterDetails}>
+    <div className={isShown ? "detailedCards" : "miniCards"} onMouseEnter={showCharacterDetails} onClick={showCharacterDetails}>
       <div className={isShown ? "portalCards" : ""}>
         <div className="charName">
           <p className="charac">{props.name}</p>
