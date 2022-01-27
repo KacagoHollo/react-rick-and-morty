@@ -21,9 +21,9 @@ const Character = (props) => {
         </div>
         {isShown && (
           <div>
-            <p>Status: {props.status}</p>
-            <p>Gender: {props.gender}</p>
-            <p>Location: {props.location}</p>
+            <p className="low"><small>Status:</small> {props.status}</p>
+            <p className="low"><small>Gender:</small> {props.gender}</p>
+            <p className="low"><small>Location:</small> {props.location}</p>
           </div>
         )}
       </div>

@@ -190,7 +190,7 @@ button:hover span:after {
 
 .charName,
 .charSpecies {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
@@ -244,6 +244,7 @@ a {
   width: 200px;
   height: 330px;
   border-radius: 10px;
+
   /* background-color: rgba(95, 158, 160, 0.5); */
 
   /* position: fixed;
@@ -302,13 +303,21 @@ a {
 .detailedCards p {
   text-align: center;
   color: #24325fff;
-  margin: 4px 0;
+  margin: 2px auto;
   font-weight: 700;
 }
+.detailedCards p.characSpec {
+  color: #fafd7cff;
+}
+
+.detailedCards p.charac {
+  color: #82491eff;
+}
+
 .detailedCards h2 {
   text-align: center;
-  color: #24325fff;
-  margin: 4px 0;
+  /* color: #24325fff; */
+  margin: 0 0;
   font-weight: 900;
   font-family: "Audiowide", cursive;
 }
@@ -337,13 +346,14 @@ a {
 
 .portalCards {
   text-align: center;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
 
   position: sticky;
   width: 360px;
-  height: 400px;
+  height: 360px;
+
   background-image: url("./images/portal1.png");
-  background-size: 92%;
+  background-size: 95%;
   background-position: center;
   background-repeat: no-repeat;
   padding: 0 60px;
@@ -401,7 +411,9 @@ a {
 }
 
 p.charac {
-  margin-top: 15px;
+  margin: 2px auto;
+  max-width: 160px;
+  padding-top: 8px;
 }
 
 /* ENDLESS ROTATE */
@@ -416,3 +428,9 @@ p.charac {
   }
 }
 /* ENDLESS ROTATE */
+
+.low {
+  display: block;
+  font-size: 16px;
+  max-width: 180px;
+}
